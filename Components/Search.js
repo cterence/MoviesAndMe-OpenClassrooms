@@ -6,7 +6,7 @@ class Search extends React.Component {
 
   render() {
     return (
-      <View style ={{ marginTop: 30}}>
+      <View style ={styles.main_container}>
         <TextInput style={styles.textinput} placeholder='Titre du film'/>
         <Button style={{ height: 50 }} title='Rechercher' onPress={() => {}}/>
       </View>
@@ -15,6 +15,10 @@ class Search extends React.Component {
 }
 
 const styles = StyleSheet.create({
+  main_container : {
+    marginTop: 30,
+    flex: 1
+  },
   textinput : {
      height: 50,
      marginLeft: 5,
